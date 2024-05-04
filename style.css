@@ -44,6 +44,7 @@ input[type="text"] {
     cursor: pointer;
     margin-left: 20px;
   }
+
   button[type="submit"] {
     background-color: #070e15;
     border: none;
@@ -119,4 +120,31 @@ input[type="text"] {
   
   #results a:hover {
     background-color: #f3cf03;
+  }
+
+  @media screen and (max-width:451px){
+    h1{
+      font-size: 45px;
+    }
+
+    form{
+      display: flex;
+      justify-content:center;
+      /* align-items:center; */
+      flex-direction: column;
+    }
+
+    input[type="text"] {
+     width:100%;
+    }
+
+    button[type="submit"] {
+      display: block;
+      margin-top: 20px;
+      width:100%;
+    }
+
+    .btn{
+      margin-left: 0;
+    }
   }
